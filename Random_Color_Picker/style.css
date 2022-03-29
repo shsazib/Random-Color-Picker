@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contant {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#output {
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
+#button {
+  font-size: 25px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+#button:hover {
+  background-color: #fff;
+  color: black;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+.copy-btn {
+    float: right;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.copy-btn:hover {
+  color: rgb(2, 97, 2);
+}
+.copy-btn:active{
+    font-size: 20px;
+}
+.full-contant {
+  width: 390px;
+  border: 1px solid Black;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  border: 1px solid black;
+}
+
+
+.toast-Message{
+  position: fixed;
+  z-index: 999;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgb(26, 112, 8);
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.toast-message-slide-in{
+  animation: toast-animation-in 0.5s ease-in;
+}
+.toast-message-slide-out{
+  animation: toast-animation-out 0.5s ease-in;
+}
+
+
+@keyframes toast-animation-in{
+  from{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes toast-animation-out{
+  from{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
